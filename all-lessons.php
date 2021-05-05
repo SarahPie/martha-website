@@ -39,17 +39,18 @@ color: white;
 <th>URL</th>
 </tr>
 <?php
-$user = "martha";
-$password = "martha12!scuapp";
-$host = "mysql.engr.scu.edu";
-$dbase = "sdb_martha";
- $table = "lessons";
+    //variables are set to x for privacy reasons
+$user = "x";
+$password = "x";
+$host = "x";
+$dbase = "x";
+$table = "x";
 $url = "https://martha.engr.scu.edu";
 $connection= new mysqli($host, $user, $password, $dbase);
  if ($connection->connect_error) {
  die("Connection failed: " . $connection->connect_error);
 } else {
-$sql = "SELECT lesson, filepath FROM lessons";
+$sql = "SELECT x, y FROM lessons";
 $result = $connection->query($sql);
 if ($result) {
 // output data of each row
