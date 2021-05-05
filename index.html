@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MARTHA</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="app.js"></script>
+    <meta name="theme-color" content="#FFE1C4">
+    <link rel="stylesheet" href="style.css">
+    <link 
+    <link rel="icon" 
+      type="image/png" 
+      href="/logo.png">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+<h1>MARTHA: An Offline Educational Tool for Cameroonian Refugees</h1>
+<strong id="instructions"> Fill out the form below to add a new lesson to MARTHA </strong>
+<a  href="/all-lessons.php">See all lessons</a>
+ <form action="/upload.php" method='post' enctype="multipart/form-data">
+        Upload Lesson PDF <input type="file" name="file"/>
+        <br><br>
+        Password<input type="password" name="password"/>
+        <br><br>
+        Lesson Title<input required type="text" name="lesson"/>
+        <br><br>
+        <label for="level">Level of Education</label>
+        <select required name="level" id="level">
+          <option value="All">All</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="5">6</option>
+        </select>        
+        <br><br>
+        <label for="education">Type of Education</label>
+        <select required name="education" id="education">
+          <option value="health">Health Education</option>
+          <option value="science">Science and Technology Education</option>
+          <option value="culture">National Culture Education</option>
+          <option value="language">Language and Literature Education</option>
+          <option value="french">French Education</option>
+        </select> 
+        <br><br>
+        <label for="subject">Subject</label>
+        <select required name="subject" id="subject">
+          <option value="wellness">Wellness</option>
+          <option value="physical">Physical Health</option>
+          <option value="other">Other</option>
+        </select> 
+        <br><br>
+        <input type="submit" value="Submit"/>
+    </form>
+    </body>
+</html>

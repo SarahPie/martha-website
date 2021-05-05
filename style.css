@@ -1,0 +1,40 @@
+body {
+  display: flex; 
+  padding: 50px;
+  flex-flow: column wrap;
+  justify-content: center;
+  font-family:'lato', sans-serif;
+}
+form {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  width: 50%;
+}
+input, select {
+  padding: 5px; 
+  border-radius:8px;
+}
+
+input[type=submit] {
+  padding:10px;
+  border:none;
+  background-color:#5341AF;
+  color:#fff;
+  font-weight:600;
+  border-radius:8px;
+  width:200px;
+}
+
+#instructions {
+ margin-bottom: 20px;
+}
+a{
+ padding-bottom:50px;
+ color: purple;
+ font-size: 14pt;
+}
+hr{
+  border-top: 1px solid black;
+
+}
