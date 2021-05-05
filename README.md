@@ -1,1 +1,1 @@
-# Admnin website for the MARTHA application
+# Admin website for the MARTHA application
